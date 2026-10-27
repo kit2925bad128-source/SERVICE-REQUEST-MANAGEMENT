@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <title>Sign in | Service Desk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body class="login-page">
+    <main class="login-shell">
+        <section class="login-brand" aria-label="Service Desk">
+            <a class="brand-mark" href="login.html" aria-label="Service Desk home">
+                <span class="brand-icon" aria-hidden="true">S</span>
+                <span>Service<span class="brand-light">Desk</span></span>
+            </a>
+
+            <div class="brand-message">
+                <p class="eyebrow"><span class="eyebrow-line"></span> ORGANIZATION SUPPORT</p>
+                <h1>Good work<br>starts with<br><span>good support.</span></h1>
+                <p class="brand-copy">A clearer way to ask for help, track progress, and get back to what matters.</p>
+            </div>
+
+            <div class="brand-footer">
+                <span class="availability-dot" aria-hidden="true"></span>
+                <span>Support team online</span>
+                <span class="footer-divider" aria-hidden="true"></span>
+                <span>Mon-Fri, 8am-6pm</span>
+            </div>
+            <div class="brand-index" aria-hidden="true">SD / 01</div>
+        </section>
+
+        <section class="login-panel" aria-labelledby="login-title">
+            <div class="login-panel-top">
+                <span class="mobile-brand">Service<span>Desk</span></span>
+                <span class="secure-label"><span class="lock-icon" aria-hidden="true"></span> SECURE PORTAL</span>
+            </div>
+
+            <div class="login-form-wrap">
+                <p class="form-kicker">YOUR WORKSPACE</p>
+                <h2 id="login-title">Welcome back</h2>
+                <p class="form-intro">Sign in to manage your service requests.</p>
+
+                <form id="login-form" action="login" method="post" novalidate>
+                    <label for="email">Work email</label>
+                    <div class="input-wrap">
+                        <span class="input-icon email-icon" aria-hidden="true"></span>
+                        <input id="email" name="email" type="email" autocomplete="username" placeholder="you@company.com" maxlength="100" required>
+                    </div>
+
+                    <div class="password-label-row">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="input-wrap">
+                        <span class="input-icon password-icon" aria-hidden="true"></span>
+                        <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+                        <button class="password-toggle" type="button" aria-label="Show password" aria-pressed="false" title="Show password">
+                            <span class="eye-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+
+                    <p id="login-message" class="form-message" role="status" aria-live="polite" hidden></p>
+
+                    <button id="login-submit" class="submit-button" type="submit">
+                        <span class="button-label">Sign in</span>
+                        <span class="button-arrow" aria-hidden="true">&#8594;</span>
+                    </button>
+                </form>
+
+                <p class="login-help">Having trouble signing in? <a href="mailto:support@company.com">Contact support</a></p>
+            </div>
+
+            <div class="login-panel-footer">
+                <span>&copy; 2026 Service Desk</span>
+                <span>Built for better workdays</span>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
